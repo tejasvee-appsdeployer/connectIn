@@ -1,0 +1,55 @@
+@import "./Common.scss";
+
+.parent-card {
+	margin: 2rem;
+	padding: 1rem;
+	width: 70%;
+	.profile-card-wrapper {
+		border-radius: 25px;
+		background-color: $light;
+		width: 100%;
+		height: 450px;
+		.background-img-wrap {
+			.background-img {
+				border-radius: 25px 25px 0px 0px;
+				max-width: 100%;
+				height: 180px;
+				object-fit: cover;
+			}
+		}
+		.profile-img-wrap {
+			position: absolute;
+			top: 80px;
+			left: 10px;
+			border: 5px solid white;
+			border-radius: 100%;
+			.profile-img {
+				border-radius: 100%;
+				width: 150px;
+				height: 150px;
+				object-fit: cover;
+			}
+		}
+		.card-body {
+			.left {
+				margin-top: 55px;
+			}
+		}
+	}
+	.activity-card {
+		background-color: $light;
+		color: $white;
+		border-radius: 25px;
+		.activity-post-thumbnail {
+			width: 120px;
+			height: 100px;
+			object-fit: contain;
+		}
+	}
+}
+
+@media (min-width: 0px) and (max-width: $mobile) {
+	.parent-card {
+		width: 100%;
+	}
+} ;
